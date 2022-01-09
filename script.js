@@ -12,3 +12,7 @@ function equalClick()
     var result=eval(text)
     document.getElementById("screen").value=result
 }
+function back() {
+    var value = document.getElementById("screen").value;
+    document.getElementById("screen").value = value.substr(0, value.length - 1);
+}
